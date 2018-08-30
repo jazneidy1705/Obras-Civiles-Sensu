@@ -15,6 +15,58 @@ public class Cotizacion {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	private String nombreCliente;
+	
+	private double Valor;
+
+
+	/**
+	 * @return the nombreCliente
+	 */
+	public String getNombreCliente() {
+		return nombreCliente;
+	}
+
+
+	/**
+	 * @param nombreCliente the nombreCliente to set
+	 */
+	public void setNombreCliente(String nombreCliente) {
+		this.nombreCliente = nombreCliente;
+	}
+
+
+	/**
+	 * @return the id
+	 */
+	public Long getId() {
+		return id;
+	}
+
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+	/**
+	 * @return the valor
+	 */
+	public double getValor() {
+		return Valor;
+	}
+
+
+	/**
+	 * @param valor the valor to set
+	 */
+	public void setValor(double valor) {
+		Valor = valor;
+	}
 
 
 	
