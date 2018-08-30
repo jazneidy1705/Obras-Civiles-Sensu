@@ -1,10 +1,14 @@
 package com.obrasciviles.sensu.entity;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.obrasciviles.sensu.util.EstadoCotizacionEnum;
 
 @Entity
 @Table (name="COTIZACIONES")
@@ -19,6 +23,10 @@ public class Cotizacion {
 	private String nombreCliente;
 	
 	private double Valor;
+	
+	private Date createAt;
+
+	private EstadoCotizacionEnum  estado;
 
 
 	/**
@@ -69,5 +77,38 @@ public class Cotizacion {
 	}
 
 
+	/**
+	 * @return the createAt
+	 */
+	public Date getCreateAt() {
+		return createAt;
+	}
+
+
+	/**
+	 * @param createAt the createAt to set
+	 */
+	public void setCreateAt(Date createAt) {
+		this.createAt = createAt;
+	}
+
+
+	/**
+	 * @return the estado
+	 */
+	public EstadoCotizacionEnum getEstado() {
+		return estado;
+	}
+
+
+	/**
+	 * @param estado the estado to set
+	 */
+	public void setEstado(EstadoCotizacionEnum estado) {
+		this.estado = estado;
+	}
+
+
+	
 	
 }
