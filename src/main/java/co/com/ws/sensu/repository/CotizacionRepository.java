@@ -1,8 +1,8 @@
-package com.obrasciviles.sensu.repository;
+package co.com.ws.sensu.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.obrasciviles.sensu.entity.Cotizacion;
+import co.com.ws.sensu.entity.Cotizacion;
 
 public interface CotizacionRepository  extends JpaRepository<Cotizacion, Long>{
 

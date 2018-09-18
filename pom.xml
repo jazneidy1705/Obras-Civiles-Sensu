@@ -4,13 +4,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.obrasciviles</groupId>
 	<artifactId>sensu</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>sensu</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Gestionador de proyectos de obras civiles</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -46,16 +45,14 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.modelmapper</groupId>
-			<artifactId>modelmapper</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -68,4 +65,14 @@
 	</build>
 
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.mariadb.jdbc</groupId>
+				<artifactId>mariadb-java-client</artifactId>
+				<version>2.2.6</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<groupId>co.com.ws</groupId>
 </project>

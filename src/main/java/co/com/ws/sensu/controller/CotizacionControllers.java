@@ -1,4 +1,4 @@
-package com.obrasciviles.sensu.controllers;
+package co.com.ws.sensu.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,5 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/sensu")
 public class CotizacionControllers {
+	
+	
 
 }

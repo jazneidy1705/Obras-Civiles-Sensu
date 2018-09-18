@@ -1,4 +1,4 @@
-package com.obrasciviles.sensu.entity;
+package co.com.ws.sensu.entity;
 
 import java.io.Serializable;
 import java.util.Date;
