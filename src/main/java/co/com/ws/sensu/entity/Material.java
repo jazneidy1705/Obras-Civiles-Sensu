@@ -14,7 +14,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "MATERIAL")
+@Table(name = "material")
 public class Material implements Serializable {
 
 	@Id

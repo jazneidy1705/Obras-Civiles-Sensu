@@ -8,23 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.com.ws.sensu.entity.Cotizacion;
-import co.com.ws.sensu.service.CotizacionService;
+import co.com.ws.sensu.entity.Proveedor;
+import co.com.ws.sensu.service.ProveedorService;
 
 @RestController
 @RequestMapping("/sensu/api/v1")
-public class CotizacionControllers {
-	
+public class ProveedorControllers {
+
 	@Autowired
-	CotizacionService cotizacionService;
-	
-	
-	@PostMapping("/cotizacion")
+	ProveedorService proveedorService;
+
+	@PostMapping("/proveedor")
 	@ResponseStatus(HttpStatus.CREATED)
-	public void crearCotizacion(@RequestBody Cotizacion cotizacion) {
-		cotizacionService.crearCotizacion(cotizacion);
+	public Proveedor crearRegistroParqueo(@RequestBody Proveedor proveedor) {
+		return proveedorService.crearProveedor(proveedor);
 	}
-	
-	
 
 }
